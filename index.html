@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track YOur Expenses</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9d33740bbe.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="upper_box">
+          <h1>Expense Tracker</h1>
+          <div class="balance">
+            <h2>0 Rs</h2>
+            <h3>Your balance</h3>
+          </div>
+        </div>
+        <div class="transaction_container">
+          <h3>Transaction</h3>
+          <hr />
+          <div class="transactions">
+             <div class="transaction">
+              <div class="content">
+              <div class="left_part">
+                <p class="earning_src">Youtube income</p>
+                <p class="earning_amnt">+ 3000 Rs</p>
+              </div>
+              <div class="status credit">C</div>
+            </div>
+            <div class="lower">
+              <i class="fa-solid fa-pen"></i>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_box">
+          <h3>Add Transaction</h3>
+            <form id="transactionForm">
+            <div class="txt">
+              <label for="txt_input">Text</label>
+              <input  type="text" name="txt" id="text" />
+            </div>
+            <div class="amount">
+              <label for="amount">Amount</label>
+              <input  type="number" name="amount" id="amount" />
+            </div>
+            <button type="submit" id="ernBtn">
+              <p class="earning_amnt">0 Rs</p>
+              <p>Earning</p>
+            </button>
+            <button type="submit" id="expenceBtn">
+              <p class="expense_amnt">0 Rs</p>
+              <p>Spend</p>
+            </button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
